@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinky Bags</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- font awesome icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <h1>Pinky Bags</h1>
+
+        <div class="nav-bar-links">
+            <p><a href="" class="nav-bar-link">Home</a></p>
+            <p><a href="" class="nav-bar-link">Collections</a></p>
+            <p><a href="" class="nav-bar-link">Contact</a></p>
+        </div>
+
+        <div class="nav-bar-toggle">
+            <i class="fa-solid fa-bars" style="color:rgb(228, 119, 138);"></i>
+        </div>
+    </nav>
+
+    <div class="side-nav-bar">
+        <p style="text-align: right;" onclick="closeSideNav(event)"><i class="fa-solid fa-xmark" style="color: white;"></i></p>
+        <div class="side-nav-bar-links">
+            <p><a href="" class="side-nav-bar-link">Home</a></p>
+            <p><a href="" class="side-nav-bar-link">Collections</a></p>
+            <p><a href="" class="side-nav-bar-link">Contact</a></p>
+        </div>
+    </div>
+
+    <!--Prodcut Section-->
+    <div class="product-section">
+        <form action="" class="product-search">
+            <input type="text" id="search-bar" placeholder="Search">
+            <i class="fa-solid fa-search" style="color: var(--pinkshade);"></i>
+        </form>
+
+        <div class="products">
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?shirt" alt="">
+                <p>Shirts</p>
+            </div>
+        </div>
+
+        <div class="products">
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?hoodie" alt="">
+                <p>Hoodies</p>
+            </div>
+        </div>
+
+        <div class="products">
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?kurti" alt="">
+                <p>Kurti</p>
+            </div>
+        </div>
+        
+        <div class="products">
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?sandals" alt="">
+                <p>Sandals</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+
+    <div class="footer">
+        <div class="footer-container">
+            <h2 class="footer-header">Pinky Baggy</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis aperiam iure blanditiis magni maiores molestias ad doloremque sed ipsa fugiat incidunt sequi at beatae eum explicabo, atque nisi. Itaque, quos.</p>
+        </div>
+        <div class="footer-icons">
+            <i class="fa-brands fa-instagram" style="color: white;"></i>
+            <i class="fa-brands fa-facebook" style="color: white;"></i>
+            <i class="fa-brands fa-twitter" style="color: white;"></i>
+        </div>
+        <p>@2024 pinkybaggy.com</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+ 

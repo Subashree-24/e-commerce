@@ -1,0 +1,217 @@
+:root{
+    --pinkshade: rgb(228, 119, 138);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.navbar h1{
+    color: var(--pinkshade);
+}
+
+.nav-bar-links{
+    display: flex;
+    column-gap: 20px;
+}
+
+.nav-bar-links a{
+    text-decoration: none;
+    color: #253348;
+}
+
+.nav-bar-links a:hover{
+    text-decoration: underline;
+    color: var(--pinkshade);
+}
+
+.nav-bar-toggle{
+    display: none;
+}
+
+/* Side Nav Bar styles here */
+
+.side-nav-bar{
+    background-color: var(--pinkshade);
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    /* adding a transition effect so  */
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 1s;
+}
+
+.side-nav-bar-link{
+    margin-bottom: 30px;
+    display: block;
+}
+.side-nav-bar-links a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Styling */
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;    
+}
+
+.header-wordings button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--pinkshade);
+    border: none;
+    margin-top: 20px;
+}
+
+/* service section styling */
+
+.service-section{
+    padding: 20px;
+}
+
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container-2 div{
+    background-color:  rgb(253, 219, 225);
+    padding: 10px;
+    border-radius: 10px;
+}
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* new arrivals styling */
+.new-arrivals{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.new-arrivals-container{
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrivals-container button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 8px;
+    background-color: var(--pinkshade);
+    position: absolute;
+    top: 50%;
+    left: 18%;
+}
+
+/* Newsletter styling */
+.news-letter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.news-letter input{
+    padding: 10px;
+    width: 80vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.news-letter button{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--pinkshade);
+    border: none;
+}
+
+/* Footer Styling */
+.footer{
+    background-color: var(--pinkshade);
+    padding: 30px;
+    margin-top: 50px;
+    color: white;
+}
+
+/*Product Section*/
+.product-section{
+    margin-top: 20px;
+}
+
+.product-search{
+    width: 80%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input{
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    outline: none;    
+}
+
+.products{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.product-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+/* Responsive Design on below 600px the navbar lives in the toggle menu */
+
+@media screen and (max-width:600px){
+    .nav-bar-toggle{
+        display: block;
+    }
+    .nav-bar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container-1{
+        display: none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+}
